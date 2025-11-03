@@ -4,14 +4,14 @@ alphabet =['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n',
 
 def ceaser (original_text, shift_amount,encode_or_decode):
     final_text = ""
+    if encode_or_decode == 'decode':
+             shift_amount *= -1
     for letter  in original_text:
+        
         if letter not in alphabet:
             final_text += letter
 
         else:
-           if encode_or_decode == 'decode':
-             shift_amount *= -1
-
            position = alphabet.index(letter) + shift
            position %= len(alphabet)
            final_text += alphabet[position]
