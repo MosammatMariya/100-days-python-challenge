@@ -30,6 +30,7 @@ while other:
 
     if other_option == "no":
         other = False
+        print("\n" * 50)
         highest_bid(bidding)
 
     elif other_option == "yes":
