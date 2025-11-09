@@ -42,7 +42,7 @@ def play():
         guess = int(input("Make a guess : "))
         turns = compare(guess,n,turns)
         if turns == 0:
-            print("You have no turns left.")
+            print("You have no turns left. You lose.")
             print(f"The guessed number is {n}")
             return
         elif guess != n:
