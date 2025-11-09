@@ -35,8 +35,7 @@ def play():
 
     n = random.randint(1, 100)
     turns = difficulty()
-    guess = int(input("Enter a guess: "))
-
+    
     guess = 0
     while guess != n:
         print(f"You have {turns} turns left.")
